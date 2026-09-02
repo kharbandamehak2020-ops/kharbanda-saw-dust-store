@@ -1,0 +1,65 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Homepage revision",
+      "name": "homepage-revision",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; branded homepage hero rendered with requested crop and six quality dashboard boxes, while Home gallery and In the field content were absent."
+    },
+    {
+      "criterion": "Heading readability and hero eyebrow color",
+      "name": "heading-eyebrow-readability",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; dark hero eyebrow labels rendered bold white and site headings remained readable."
+    },
+    {
+      "criterion": "Exact locations",
+      "name": "exact-contact-locations",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; exact Delhi and Yamuna Nagar addresses, map embeds, and full-address Directions links were present."
+    },
+    {
+      "criterion": "Products imagery",
+      "name": "products-imagery",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; saw dust powder, wood powder, wood shavings, and wooden flakes cards rendered with matching close-up imagery."
+    },
+    {
+      "criterion": "Applications revision",
+      "name": "applications-revision",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; Cricket Grounds used the requested pitch imagery and Mushroom Cultivation/Animal Bedding cards were absent."
+    },
+    {
+      "criterion": "Blog revision",
+      "name": "blog-revision",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; featured article used saw dust powder imagery and no Read the guide button was rendered."
+    },
+    {
+      "criterion": "Legacy and gallery revision",
+      "name": "legacy-gallery-revision",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; Legacy had no portrait/photo placeholders, About section retained the supplied visual, and exactly one gallery image headed Our special packaging used the supplied 11.57.58 photo."
+    },
+    {
+      "criterion": "Core navigation and enquiry",
+      "name": "navigation-enquiry-mobile",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Persisted browser check passed; mobile menu opened/closed, navigation reached Contact, all seven fields accepted values, WhatsApp opened for 919999994828 with the enquiry flow, and floating WhatsApp remained available."
+    }
+  ]
+}

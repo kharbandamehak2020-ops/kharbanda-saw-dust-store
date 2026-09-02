@@ -1,0 +1,25 @@
+{
+  "passed": 7,
+  "failed": 1,
+  "bugs": [
+    {
+      "severity": "high",
+      "criterion": "Legacy and gallery revision",
+      "evidence": "Browser check legacy-gallery-revision failed on /about-us: expected exactly one gallery image, received two. DOM image sources included supplied 11.57.58 image plus an additional 11.56.01 image. Failure screenshot: /root/.emergent/automation_output/20260902_085008_185/legacy-gallery-revision-failure.png"
+    }
+  ],
+  "action_items": [
+    "Remove the additional 11.56.01 gallery image from About Us, leaving only the supplied 2026-09-02 11.57.58 photo; rerun legacy-gallery-revision."
+  ],
+  "retest_needed": true,
+  "checks": [
+    {"criterion":"Homepage revision","name":"homepage-revision","lane":"browser","status":"passed","evidence":"Homepage rendered hero/brand area and four separate quality items; assertions confirmed no Home gallery or In the field text."},
+    {"criterion":"Heading readability and hero eyebrow color","name":"heading-eyebrow-readability","lane":"browser","status":"passed","evidence":"About, Legacy, and Blog hero eyebrow elements were visible and computed color was rgb(255, 255, 255)."},
+    {"criterion":"Exact locations","name":"exact-contact-locations","lane":"browser","status":"passed","evidence":"Contact page displayed both exact addresses; both map iframes and Directions links were present with Google Maps URLs."},
+    {"criterion":"Products imagery","name":"products-imagery","lane":"browser","status":"passed","evidence":"Products page displayed four named product cards and visible image elements for saw dust, wood powder, wood shavings, and wooden flakes."},
+    {"criterion":"Applications revision","name":"applications-revision","lane":"browser","status":"passed","evidence":"Applications page had no Mushroom Cultivation or Animal Bedding cards and included a Cricket Grounds image."},
+    {"criterion":"Blog revision","name":"blog-revision","lane":"browser","status":"passed","evidence":"Featured blog image alt identified fine saw dust powder close-up and no Read the guide control was present."},
+    {"criterion":"Legacy and gallery revision","name":"legacy-gallery-revision","lane":"browser","status":"failed","evidence":"Our Legacy had zero images, but About Us gallery had two images instead of one; extra 11.56.01 image was present."},
+    {"criterion":"Core navigation and enquiry","name":"navigation-enquiry-mobile","lane":"browser","status":"passed","evidence":"Mobile menu opened, mobile Contact navigation reached /contact, all seven rendered form inputs accepted values, and submit opened WhatsApp popup for 919999994828."}
+  ]
+}

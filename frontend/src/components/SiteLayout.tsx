@@ -46,7 +46,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr] lg:px-8">
           <div>
             <LogoMark />
-            <p className="mt-5 max-w-xs text-sm leading-6 text-[#F4EFE6]/70" data-testid="footer-intro">{brand.tagline}. A family-owned wood dust processing and B2B supply business serving India since 1974.</p>
+            <p className="mt-5 max-w-xs text-sm leading-6 text-[#F4EFE6]/70" data-testid="footer-intro">{brand.tagline}. A family-owned wood dust processing and industrial supply business serving India since 1974.</p>
             <p className="mt-6 text-xs font-bold uppercase tracking-[0.18em] text-[#C68B59]" data-testid="footer-trust">Two Generations. One Commitment.</p>
           </div>
           <div>

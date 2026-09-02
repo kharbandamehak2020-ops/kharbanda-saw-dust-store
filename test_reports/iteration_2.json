@@ -1,0 +1,25 @@
+{
+  "passed": 7,
+  "failed": 1,
+  "bugs": [
+    {
+      "severity": "high",
+      "criterion": "Legacy and gallery revision",
+      "evidence": "Re-run browser check legacy-gallery-revision failed on /about-us: expected exactly one image but received two. Images were supplied 11.56.01.jpeg and 11.57.58.jpeg. Failure screenshot: /root/.emergent/automation_output/20260902_085338_825/legacy-gallery-revision-failure.png. Backend cross-check /api/ returned HTTP 200 {\"message\":\"Hello World\"}, indicating this is a frontend content issue rather than an API outage."
+    }
+  ],
+  "action_items": [
+    "Remove the 11.56.01 image from the About Us gallery while retaining it in the About section; leave 11.57.58 as the sole gallery item, then rerun legacy-gallery-revision."
+  ],
+  "retest_needed": true,
+  "checks": [
+    {"criterion":"Homepage revision","name":"homepage-revision","lane":"browser","status":"passed","evidence":"Re-run passed; homepage hero/brand area and quality items rendered, with removed Home gallery and In the field content absent."},
+    {"criterion":"Heading readability and hero eyebrow color","name":"heading-eyebrow-readability","lane":"browser","status":"passed","evidence":"Re-run passed; dark-page hero eyebrow labels were visible with computed white color and headings remained readable."},
+    {"criterion":"Exact locations","name":"exact-contact-locations","lane":"browser","status":"passed","evidence":"Re-run passed; exact Delhi and Yamuna Nagar addresses, map embeds, and Directions links were present."},
+    {"criterion":"Products imagery","name":"products-imagery","lane":"browser","status":"passed","evidence":"Re-run passed; four named product cards rendered visible matching image elements."},
+    {"criterion":"Applications revision","name":"applications-revision","lane":"browser","status":"passed","evidence":"Re-run passed; Cricket Grounds image was present and Mushroom Cultivation/Animal Bedding were absent."},
+    {"criterion":"Blog revision","name":"blog-revision","lane":"browser","status":"passed","evidence":"Re-run passed; featured article used saw dust powder imagery and had no Read the guide control."},
+    {"criterion":"Legacy and gallery revision","name":"legacy-gallery-revision","lane":"browser","status":"failed","evidence":"Re-run failed; Our Legacy had no images, but About Us had two images instead of exactly one gallery image: 11.56.01.jpeg and 11.57.58.jpeg."},
+    {"criterion":"Core navigation and enquiry","name":"navigation-enquiry-mobile","lane":"browser","status":"passed","evidence":"Re-run passed; mobile menu opened/closed, navigation reached Contact, all seven fields accepted values, WhatsApp opened with target 919999994828, and floating WhatsApp remained available."}
+  ]
+}

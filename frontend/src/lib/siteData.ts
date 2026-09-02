@@ -8,7 +8,7 @@ export const brand = {
   email: "kharbanda_saw_dust_store@yahoo.co.in",
   phones: ["+91 9999994828", "+91 8888882740", "+91 9999504828"],
   whatsapp: "919999994828",
-  office: "K-11, Sawan Park, Ashok Vihar, Phase-3, Delhi - 110052, India",
+  office: "K-11, Sawan Park, Ashok Vihar - Phase 3, Delhi - 110052, Near Picnic Hut, India",
   factory: "Plot No. 42, Industrial Estate Phase-II, Yamuna Nagar - 135001, Haryana, India",
 };
 
@@ -18,6 +18,10 @@ const images = {
   logs: "https://images.unsplash.com/photo-1634672652995-ee7525bce595?auto=format&fit=crop&w=1200&q=80",
   worker: "https://images.unsplash.com/photo-1673978483693-9e4be55b2a35?auto=format&fit=crop&w=1200&q=80",
   flakes: "https://images.unsplash.com/photo-1615195695780-bb72bdeda718?auto=format&fit=crop&w=1200&q=80",
+  powder: "https://images.unsplash.com/photo-1706719681305-24b498d6a394?auto=format&fit=crop&w=1200&q=80",
+  preciseFlakes: "https://images.unsplash.com/photo-1645844995350-eb8290e9e06f?auto=format&fit=crop&w=1200&q=80",
+  preciseShavings: "https://images.unsplash.com/photo-1635513236798-6dbdc07e756e?auto=format&fit=crop&w=1200&q=80",
+  cricketPitch: "https://images.pexels.com/photos/39045812/pexels-photo-39045812.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1200",
   machinery: "https://images.unsplash.com/photo-1598299803204-b73796f43289?auto=format&fit=crop&w=1200&q=80",
   shavings: "https://images.unsplash.com/photo-1772207896656-4210003d65ee?auto=format&fit=crop&w=1200&q=80",
   processing: "https://images.unsplash.com/photo-1605146959272-0e97a1159b0f?auto=format&fit=crop&w=1200&q=80",
@@ -33,10 +37,10 @@ export const products = [
     id: "saw-dust",
     name: "Saw Dust",
     eyebrow: "Processed wood material",
-    description: "Processed wood dust for buyers who need dependable material for industrial and commercial applications.",
+    description: "Processed saw dust powder for buyers who need dependable material for industrial and commercial applications.",
     uses: ["Briquettes", "Biomass", "Mushroom cultivation", "Cricket grounds"],
-    image: images.providedSawdust,
-    alt: "A close view of sawdust supplied by Kharbanda Saw Dust Store",
+    image: images.powder,
+    alt: "Fine saw dust powder spread across a surface for industrial material inspection",
   },
   {
     id: "wood-powder",
@@ -44,8 +48,8 @@ export const products = [
     eyebrow: "Fine wood material",
     description: "Fine processed wood material for applications where particle character and consistency are discussed around the buyer’s process.",
     uses: ["Bakelite", "Mosquito coils", "WPCS", "Composites"],
-    image: images.flakes,
-    alt: "Fine wood particles and flakes on a warm timber surface",
+    image: images.powder,
+    alt: "Fine wood powder shown in close detail for industrial use",
   },
   {
     id: "wood-shavings",
@@ -53,8 +57,8 @@ export const products = [
     eyebrow: "Light, absorbent shavings",
     description: "Processed wood shavings for industrial and commercial requirements, including bedding and material-handling uses.",
     uses: ["Animal bedding", "Packaging", "Spill control", "Agriculture"],
-    image: images.shavings,
-    alt: "Fresh wood shavings collected on a timber workbench",
+    image: images.preciseShavings,
+    alt: "Fresh curled wood shavings in close detail",
   },
   {
     id: "wooden-flakes",
@@ -62,8 +66,8 @@ export const products = [
     eyebrow: "Coarser wood particles",
     description: "Wooden flakes for applications where a larger wood particle profile is required and agreed with the buyer.",
     uses: ["Flooring", "Particle boards", "Composites", "Industrial applications"],
-    image: images.worker,
-    alt: "Wood processing work area with timber material",
+    image: images.preciseFlakes,
+    alt: "Coarse wooden flakes shown in close detail",
   },
 ];
 
@@ -74,27 +78,20 @@ export const applications = [
   { id: "flooring", name: "Flooring & Panel Boards", description: "Wood particles for flooring, panel and board conversations across different wood qualities.", image: images.worker, product: "wooden-flakes" },
   { id: "electroplating", name: "Electroplating", description: "Discuss your process requirements with our team to explore the right wood material.", image: images.machinery, product: "wood-powder" },
   { id: "briquettes", name: "Briquettes & Biomass", description: "Sawdust for briquettes and biomass applications, subject to the required material characteristics.", image: images.flakes, product: "saw-dust" },
-  { id: "cricket-grounds", name: "Cricket Grounds", description: "Wood dust requirements for sports grounds can be discussed based on use and site requirements.", image: images.logs, product: "saw-dust" },
+  { id: "cricket-grounds", name: "Cricket Grounds", description: "Wood dust requirements for sports grounds can be discussed based on use and site requirements.", image: images.cricketPitch, product: "saw-dust" },
   { id: "petroleum", name: "Petroleum Industry", description: "Explore wood-based absorbent material options for petroleum and oil-related industrial use.", image: images.processing, product: "saw-dust" },
-  { id: "mushroom", name: "Mushroom Cultivation", description: "Sawdust for mushroom cultivation, with the suitable wood species and quality discussed for the application.", image: images.shavings, product: "saw-dust" },
-  { id: "animal-bedding", name: "Animal Bedding", description: "Wood shavings and sawdust for bedding conversations across agricultural and animal-care operations.", image: images.shavings, product: "wood-shavings" },
   { id: "many-more", name: "Many More Industries", description: "Have a different requirement? Tell us about your process, quantity and desired material.", image: images.factory, product: "saw-dust" },
 ];
 
 export const gallery = [
-  { image: images.providedBrand, alt: "Kharbanda Saw Dust Store branded product sack with wood product information", label: "Our brand" },
-  { image: images.providedSawdust, alt: "Sawdust stock at the Kharbanda Saw Dust Store facility", label: "Provided facility photo" },
-  { image: images.providedSacks, alt: "Stacked sacks ready for bulk wood material supply", label: "Provided stock photo" },
-  { image: images.factory, alt: "Industrial processing machinery and wood material handling", label: "Processing in context" },
-  { image: images.logs, alt: "Timber logs prepared for wood processing", label: "Wood inputs" },
-  { image: images.worker, alt: "Worker handling timber in an industrial wood workspace", label: "Industrial work" },
+  { image: images.providedSawdust, alt: "Kharbanda Saw Dust Store special packaging and supplied wood material", label: "Our special packaging" },
 ];
 
 export const faqs = [
-  { question: "What products does Kharbanda Saw Dust Store supply?", answer: "We process and supply saw dust, wood powder, wood shavings and wooden flakes for B2B requirements." },
+  { question: "What products does Kharbanda Saw Dust Store supply?", answer: "We process and supply saw dust, wood powder, wood shavings and wooden flakes for industrial and commercial requirements." },
   { question: "Do you supply sawdust in bulk?", answer: "Yes. We discuss bulk requirements with manufacturers, procurement teams, distributors and other business buyers." },
   { question: "Which wood species and qualities are available?", answer: "We deal in different wood species and qualities. Availability and suitability are discussed according to the application and buyer requirement." },
-  { question: "Do you supply across India?", answer: "We serve B2B buyers across India. Share your location, quantity and intended application to begin a conversation." },
+  { question: "Do you supply across India?", answer: "We serve business buyers across India. Share your location, quantity and intended application to begin a conversation." },
   { question: "Where is your factory located?", answer: "Our factory address is Plot No. 42, Industrial Estate Phase-II, Yamuna Nagar - 135001, Haryana, India." },
   { question: "How can I request a quotation?", answer: "Use the Request a Bulk Quote form or WhatsApp our team at +91 9999994828 with your requirement." },
 ];
