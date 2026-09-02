@@ -1,0 +1,18 @@
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
+import SectionHeading from "@/components/SectionHeading";
+import ApplicationCard from "@/components/ApplicationCard";
+import { applications, brand, whatsappUrl } from "@/lib/siteData";
+
+export default function Applications() {
+  return (
+    <>
+      <Seo title="Industries We Serve | Sawdust Applications in Bakelite, WPC, Coil & More" description="Explore wood dust and wood material applications across Bakelite, mosquito coils, WPCS, flooring, electroplating, briquettes, biomass, composites and more." />
+      <section className="page-hero" data-testid="applications-hero"><div className="mx-auto max-w-7xl px-5 lg:px-8"><p className="section-eyebrow text-[#D7A16F]" data-testid="applications-eyebrow">Where wood finds purpose</p><h1 className="mt-4 max-w-4xl font-heading text-4xl font-bold tracking-[-0.06em] text-white sm:text-6xl" data-testid="applications-heading">Industrial applications &amp; industries we serve.</h1><p className="mt-6 max-w-2xl text-lg leading-8 text-white/70" data-testid="applications-description">A useful starting point for procurement teams exploring sawdust, wood powder, wood shavings and wooden flakes for their process.</p></div></section>
+      <section className="section-shell" data-testid="applications-grid-section"><div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end"><SectionHeading eyebrow="Explore the possibilities" title="From briquettes to composites and beyond." body="Suitability depends on material specifications and application requirements. Use the related product link to continue the conversation." /><Link to="/contact" className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#183A2B] px-5 py-3 text-sm font-bold text-white" data-testid="applications-quote-button">Discuss your requirement <ArrowRight className="size-4" aria-hidden="true" /></Link></div><div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{applications.map((application) => <ApplicationCard key={application.id} application={application} />)}</div></section>
+      <section className="section-shell border-y border-[#E0D7C6] bg-[#F4EFE6]" data-testid="applications-seo-section"><div className="grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]"><div><p className="section-eyebrow" data-testid="applications-seo-eyebrow">Application-first conversations</p><h2 className="mt-3 font-heading text-3xl font-bold tracking-[-0.04em]" data-testid="applications-seo-heading">A wood sawdust supplier for real industrial context.</h2><p className="mt-4 max-w-2xl text-base leading-7 text-[#57534E]" data-testid="applications-seo-copy">Sawdust for briquettes, sawdust for biomass, sawdust for mushroom cultivation and sawdust for animal bedding can each involve different buyer expectations. Share the application so the discussion starts in the right place.</p></div><a href={whatsappUrl("Hello Kharbanda Saw Dust Store, I would like to discuss a wood material application.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-[#082714]" data-testid="applications-whatsapp-button">WhatsApp an application enquiry <ArrowRight className="size-4" aria-hidden="true" /></a></div></section>
+      <p className="sr-only" data-testid="applications-business-name">{brand.name} serves B2B customers across India.</p>
+    </>
+  );
+}

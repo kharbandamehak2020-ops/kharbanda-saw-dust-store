@@ -1,0 +1,31 @@
+# Kharbanda Saw Dust Store — Living Spec
+
+## Product
+Modern, mobile-first B2B website for Kharbanda Saw Dust Store, a family-owned wood dust processing, manufacturing and supply business trusted since 1974. The public preview is `https://timber-material-hub.preview.emergentagent.com`.
+
+## Business data
+- Founder: Mr. Radha Kishan Kharbanda
+- Current second generation: Mr. Ashok Kumar Kharbanda
+- Products: saw dust, wood powder, wood shavings, wooden flakes
+- Service: B2B supply nationwide across India; different wood species and qualities subject to requirement
+- Delhi office: K-11, Sawan Park, Ashok Vihar, Phase-3, Delhi - 110052, India
+- Factory: Plot No. 42, Industrial Estate Phase-II, Yamuna Nagar - 135001, Haryana, India
+- Phones: +91 9999994828, +91 8888882740, +91 9999504828
+- Email: kharbanda_saw_dust_store@yahoo.co.in
+
+## Key flows
+- Internal navigation uses React Router in one site shell; no internal link opens a new tab.
+- Product and application cards link internally to related product or contact paths.
+- Contact enquiry form collects name, company, phone/WhatsApp, location, required quantity, intended application and message, then opens WhatsApp with a pre-filled message. No email/backend submission is claimed.
+- Persistent floating WhatsApp CTA uses +91 9999994828.
+- Home, About Us, Our Legacy, Products, Applications, Blog and Contact routes are implemented.
+- `sitemap.xml` and `robots.txt` are public frontend assets. Dynamic page metadata, canonical URLs and JSON-LD are managed by the `Seo` component.
+
+## Design
+Light warm-beige canvas, deep forest green, dark wood brown and warm amber. Plus Jakarta Sans headings and DM Sans body text. Provided branded sack image is prominent on the homepage; other provided photos appear in the gallery. Founder portraits remain clearly labeled placeholders until real photographs are supplied.
+
+## Auth and roles
+No authentication or gated areas.
+
+## Integrations
+No analytics, Search Console verification or email provider IDs are inserted. Google Maps is represented by public embed cards/links, and WhatsApp is a direct `wa.me` link.

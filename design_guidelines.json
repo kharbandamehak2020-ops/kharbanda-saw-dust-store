@@ -1,0 +1,251 @@
+{
+  "project_info": {
+    "name": "Kharbanda Saw Dust Store",
+    "tagline": "Pioneer in Wood Industry",
+    "slogan": "where wood finds purpose",
+    "established_year": 1974,
+    "app_type": "hybrid_fullstack",
+    "theme": "Light theme predominant with deep forest green, dark wood brown, warm beige/off-white and earthy neutrals"
+  },
+  "business_details": {
+    "office_address": "K-11, Sawan Park, Ashok Vihar, Phase-3, Delhi-110052",
+    "factory_address": "Plot No 42, Industrial Estate Phase-II, Yamuna Nagar-135001 (Haryana)",
+    "contact_numbers": [
+      "+91 9999994828",
+      "+91 8888882740",
+      "+91 9999504828"
+    ],
+    "email": "kharbanda_saw_dust_store@yahoo.co.in",
+    "whatsapp_primary": "+919999994828",
+    "whatsapp_message_template": "Hello Kharbanda Saw Dust Store, I would like to request a bulk quote for "
+  },
+  "logo_specification": {
+    "concept": "Capital letter 'K' with artistic dual identity: Left stem shaped as a flourishing pine/foliage tree and right branch/leg curved in a rounded tree trunk texture.",
+    "svg_instructions": "Render as precise inline SVG with crisp path elements. Dual-color tone: Forest Green (#1B4332) for the left tree foliage side, Warm Dark Cedar (#4A2E1B) for the right tree trunk curve."
+  },
+  "color_palette": {
+    "primary": {
+      "forest_green_deep": "#183A2B",
+      "forest_green_accent": "#2D6A4F",
+      "forest_green_light": "#E8F0EC"
+    },
+    "secondary": {
+      "wood_brown_dark": "#3D2314",
+      "wood_brown_medium": "#6B4226",
+      "wood_amber_warm": "#C68B59"
+    },
+    "neutrals": {
+      "warm_beige_bg": "#FBF9F5",
+      "cream_surface": "#F4EFE6",
+      "border_earth": "#E0D7C6",
+      "text_main": "#1C1917",
+      "text_muted": "#57534E"
+    },
+    "functional": {
+      "whatsapp_green": "#25D366",
+      "whatsapp_hover": "#1EBE57",
+      "amber_badge": "#D97706"
+    }
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans / Outfit / Sora (Bold, clean geometric display)",
+    "body_font": "Inter / DM Sans (High legibility modern sans-serif)",
+    "mono_font": "JetBrains Mono (For batch numbers, specs, contact codes)",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900 leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-stone-900",
+      "h3": "text-xl sm:text-2xl font-semibold text-stone-900",
+      "h4": "text-lg sm:text-xl font-semibold text-stone-800",
+      "body": "text-base text-stone-700 leading-relaxed",
+      "caption": "text-xs uppercase tracking-widest text-emerald-800 font-semibold"
+    }
+  },
+  "pages_and_routes": [
+    {
+      "path": "/",
+      "name": "Home",
+      "title": "Kharbanda Saw Dust Store | Pioneer in Wood Industry Since 1974",
+      "description": "Leading B2B manufacturer and bulk supplier of high-grade wood dust, wood powder, wood shavings and wooden flakes in Delhi & Yamuna Nagar. Trusted since 1974.",
+      "h1": "Pioneer in Wood Industry | Kharbanda Saw Dust Store"
+    },
+    {
+      "path": "/about-us",
+      "name": "About Us",
+      "title": "About Us | Kharbanda Saw Dust Store - Trusted Since 1974",
+      "description": "Discover the legacy of Kharbanda Saw Dust Store. Over 50 years of excellence in wood dust processing, precision manufacturing, and nationwide B2B supply.",
+      "h1": "Where Wood Finds Purpose: Our B2B Legacy Since 1974"
+    },
+    {
+      "path": "/our-legacy",
+      "name": "Our Legacy",
+      "title": "Our 50-Year Legacy | Kharbanda Saw Dust Store",
+      "description": "Explore 5 decades of pioneering timber processing, quality standards, and sustainable industrial supply from Delhi and Yamuna Nagar.",
+      "h1": "Five Decades of Industrial Excellence in Wood Processing"
+    },
+    {
+      "path": "/products",
+      "name": "Products",
+      "title": "Industrial Wood Products | Saw Dust, Wood Powder, Flakes & Shavings",
+      "description": "Bulk supplier of premium Saw Dust, Fine Wood Powder, Dried Wood Shavings, and Industrial Wooden Flakes customized for B2B industrial applications.",
+      "h1": "Premium B2B Wood Dust & Industrial Fiber Products"
+    },
+    {
+      "path": "/applications",
+      "name": "Applications / Industries",
+      "title": "Industries We Serve | Sawdust Applications in Bakelite, WPC, Coil & More",
+      "description": "High-purity raw materials for Bakelite, Mosquito Coils, WPC, Electroplating, Biomass Briquettes, Cricket Grounds, Petroleum & Composites.",
+      "h1": "Industrial Applications & Industries We Serve"
+    },
+    {
+      "path": "/blog",
+      "name": "Blog & Knowledge Hub",
+      "title": "Wood Processing & Industrial Sawdust Insights | B2B Guide",
+      "description": "Expert technical articles on choosing sawdust grades for briquettes, WPC composite manufacturing, biomass fuel, animal bedding, and soil aeration.",
+      "h1": "Industrial Sawdust & Wood Fiber Technical Insights"
+    },
+    {
+      "path": "/contact",
+      "name": "Contact Us / Request Quote",
+      "title": "Contact Kharbanda Saw Dust Store | Bulk Quote & Factory Visit",
+      "description": "Get instant B2B quotes for sawdust and wood powder. Direct WhatsApp enquiry, Delhi office & Yamuna Nagar factory addresses and phone numbers.",
+      "h1": "Contact Us & Request a Bulk B2B Quote"
+    }
+  ],
+  "key_products": [
+    {
+      "id": "saw-dust",
+      "title": "Saw Dust (Standard & Fine)",
+      "tagline": "Optimal Mesh Density for Biomass, Briquettes & Agriculture",
+      "description": "Screened, dry, uniform saw dust sourced from high-grade timber. Perfect for briquettes, petroleum absorbents, cricket pitches, and mushroom cultivation.",
+      "uses": ["Briquettes", "Biomass Fuel", "Cricket Grounds", "Petroleum Absorbent", "Mushroom Cultivation", "Animal Bedding"]
+    },
+    {
+      "id": "wood-powder",
+      "title": "Fine Wood Powder (80-120 Mesh)",
+      "tagline": "Micro-milled organic filler for technical manufacturing",
+      "description": "Controlled moisture wood flour engineered for Bakelite molding powders, mosquito coils, WPC decking, and electroplating finishes.",
+      "uses": ["Bakelite Molding", "Mosquito Coils", "Wood Plastic Composites (WPC)", "Electroplating", "Specialty Resin Fillers"]
+    },
+    {
+      "id": "wood-shavings",
+      "title": "Dried Wood Shavings",
+      "tagline": "Dust-extracted, highly absorbent natural bedding and packaging material",
+      "description": "Clean, chemical-free pine and hardwood shavings processed for poultry bedding, livestock flooring, eco-packaging, and insulation.",
+      "uses": ["Poultry & Animal Bedding", "Protective Eco Packaging", "Horse Stables", "Spill Control"]
+    },
+    {
+      "id": "wooden-flakes",
+      "title": "Industrial Wooden Flakes",
+      "tagline": "Coarse wood flakes for board manufacturing and thermal applications",
+      "description": "Uniform coarse timber flakes designed for particle board synthesis, thermal briquetting, and industrial filtration media.",
+      "uses": ["Particle Board & Composites", "Thermal Briquettes", "Boiler Fuel", "Industrial Filtration"]
+    }
+  ],
+  "target_industries": [
+    "Bakelite & Electrical Molding",
+    "Mosquito Coil Manufacturing",
+    "Wood Plastic Composites (WPCs)",
+    "Flooring & Panel Boards",
+    "Electroplating & Metal Finishing",
+    "Biomass Briquettes & Renewable Fuel",
+    "Composites & Chemical Fillers",
+    "Cricket Grounds & Sports Pitches",
+    "Petroleum & Oil Spill Absorption",
+    "Mushroom Cultivation & Agriculture",
+    "Poultry & Animal Bedding"
+  ],
+  "image_urls": {
+    "hero_banner": "https://images.unsplash.com/photo-1639038312723-75ba817ef552?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "factory_machinery": "https://images.unsplash.com/photo-1603517429984-1818bd866606?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "wood_logs_pile": "https://images.unsplash.com/photo-1634672652995-ee7525bce595?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "timber_processing_worker": "https://images.unsplash.com/photo-1673978483693-9e4be55b2a35?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "sawdust_flakes_close": "https://images.unsplash.com/photo-1615195695780-bb72bdeda718?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "industrial_worker_machinery": "https://images.unsplash.com/photo-1598299803204-b73796f43289?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "seo_and_schema_rules": {
+    "sitemap_path": "/sitemap.xml",
+    "robots_path": "/robots.txt",
+    "organization_schema": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Kharbanda Saw Dust Store",
+      "slogan": "where wood finds purpose",
+      "foundingDate": "1974",
+      "url": "https://kharbandasawdust.com",
+      "logo": "https://kharbandasawdust.com/logo.svg",
+      "email": "kharbanda_saw_dust_store@yahoo.co.in",
+      "telephone": ["+919999994828", "+918888882740", "+919999504828"]
+    },
+    "local_business_schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kharbanda Saw Dust Store - Delhi Office",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "K-11, Sawan Park, Ashok Vihar, Phase-3",
+          "addressLocality": "Delhi",
+          "postalCode": "110052",
+          "addressCountry": "IN"
+        },
+        "telephone": "+919999994828"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kharbanda Saw Dust Store - Yamuna Nagar Factory",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot No 42, Industrial Estate Phase-II",
+          "addressLocality": "Yamuna Nagar",
+          "addressRegion": "Haryana",
+          "postalCode": "135001",
+          "addressCountry": "IN"
+        },
+        "telephone": "+919999504828"
+      }
+    ],
+    "faq_schema": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What products does Kharbanda Saw Dust Store supply in bulk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We manufacture and supply high-quality Saw Dust, Fine Wood Powder, Wood Shavings, and Wooden Flakes tailored for B2B industrial usage across India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which industries use your wood dust and powder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our products are extensively used in Bakelite molding, mosquito coils, WPC flooring, electroplating, biomass briquettes, composites, cricket grounds, and oil spill absorption."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are your office and manufacturing facilities located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our main office is situated in Ashok Vihar Phase-3, Delhi (110052) and our full-scale manufacturing factory is at Industrial Estate Phase-II, Yamuna Nagar (135001, Haryana)."
+          }
+        }
+      ]
+    }
+  },
+  "interactive_components": {
+    "floating_whatsapp_button": "Sticky bottom-right button with pulse aura, opening pre-formatted inquiry text on click",
+    "bulk_quote_modal": "Shadcn Dialog component containing multi-step bulk order inquiry with instant WhatsApp dispatch",
+    "interactive_gallery": "Tabbed gallery showing Provided Photos vs Processed Timber & Factory Workspaces",
+    "location_map_cards": "Dual interactive location cards for Delhi Office and Yamuna Nagar Factory with direct Google Maps direction buttons",
+    "product_mesh_calculator": "Quick mesh size selector to assist B2B buyers in picking the right wood powder density"
+  },
+  "general_ui_ux_guidelines": {
+    "data_testid_policy": "All clickable buttons, input fields, navigation links, cards, tabs, and critical text nodes MUST contain descriptive data-testid attributes (e.g., data-testid=\"hero-whatsapp-btn\", data-testid=\"product-card-saw-dust\").",
+    "accessibility": "WCAG AA contrast compliant text, proper ARIA labels on dynamic elements, semantic section tags (<main>, <nav>, <header>, <footer>, <section>, <article>).",
+    "performance": "Fast loading times, lazy loaded below-the-fold images, smooth transitions without heavy JavaScript bloat."
+  }
+}
