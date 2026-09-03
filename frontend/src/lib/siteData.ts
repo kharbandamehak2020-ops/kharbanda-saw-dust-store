@@ -18,6 +18,7 @@ const images = {
   logs: "https://images.unsplash.com/photo-1634672652995-ee7525bce595?auto=format&fit=crop&w=1200&q=80",
   worker: "https://images.unsplash.com/photo-1673978483693-9e4be55b2a35?auto=format&fit=crop&w=1200&q=80",
   flakes: "https://images.unsplash.com/photo-1615195695780-bb72bdeda718?auto=format&fit=crop&w=1200&q=80",
+  sawdust: "https://images.unsplash.com/photo-1706719681769-183148032058?auto=format&fit=crop&w=1200&q=80",
   powder: "https://images.unsplash.com/photo-1706719681305-24b498d6a394?auto=format&fit=crop&w=1200&q=80",
   preciseFlakes: "https://images.unsplash.com/photo-1645844995350-eb8290e9e06f?auto=format&fit=crop&w=1200&q=80",
   preciseShavings: "https://images.unsplash.com/photo-1635513236798-6dbdc07e756e?auto=format&fit=crop&w=1200&q=80",
@@ -39,7 +40,7 @@ export const products = [
     eyebrow: "Processed wood material",
     description: "Processed saw dust powder for buyers who need dependable material for industrial and commercial applications.",
     uses: ["Briquettes", "Biomass", "Mushroom cultivation", "Cricket grounds"],
-    image: images.powder,
+    image: images.sawdust,
     alt: "Fine saw dust powder spread across a surface for industrial material inspection",
   },
   {
@@ -89,11 +90,11 @@ export const gallery = [
 
 export const faqs = [
   { question: "What products does Kharbanda Saw Dust Store supply?", answer: "We process and supply saw dust, wood powder, wood shavings and wooden flakes for industrial and commercial requirements." },
-  { question: "Do you supply sawdust in bulk?", answer: "Yes. We discuss bulk requirements with manufacturers, procurement teams, distributors and other business buyers." },
+  { question: "Do you supply sawdust in volume?", answer: "Yes. We discuss volume requirements with manufacturers, procurement teams, distributors and other business buyers." },
   { question: "Which wood species and qualities are available?", answer: "We deal in different wood species and qualities. Availability and suitability are discussed according to the application and buyer requirement." },
   { question: "Do you supply across India?", answer: "We serve business buyers across India. Share your location, quantity and intended application to begin a conversation." },
   { question: "Where is your factory located?", answer: "Our factory address is Plot No. 42, Industrial Estate Phase-II, Yamuna Nagar - 135001, Haryana, India." },
-  { question: "How can I request a quotation?", answer: "Use the Request a Bulk Quote form or WhatsApp our team at +91 9999994828 with your requirement." },
+  { question: "How can I request a quotation?", answer: "Use the Request a Quote form or WhatsApp our team at +91 9999994828 with your requirement." },
 ];
 
 export const stockImages = images;
@@ -103,5 +104,5 @@ export function whatsappUrl(message: string) {
 }
 
 export function defaultWhatsappMessage() {
-  return "Hello Kharbanda Saw Dust Store, I would like to enquire about your bulk wood dust products.";
+  return "Hello Kharbanda Saw Dust Store, I would like to enquire about your wood dust products.";
 }

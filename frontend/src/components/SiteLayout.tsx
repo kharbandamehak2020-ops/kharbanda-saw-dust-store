@@ -30,7 +30,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
           </nav>
           <div className="hidden items-center gap-3 xl:flex">
             <a href={`tel:${brand.phones[0].replaceAll(" ", "")}`} className="hidden items-center gap-2 text-xs font-bold text-[#57534E] 2xl:flex" data-testid="header-phone-link"><Phone className="size-3.5 text-[#2D6A4F]" aria-hidden="true" /> {brand.phones[0]}</a>
-            <Link to="/contact" className="rounded-full bg-[#183A2B] px-4 py-2.5 text-xs font-bold text-white hover:-translate-y-0.5 hover:bg-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#183A2B]" data-testid="header-quote-button">Request a Bulk Quote</Link>
+            <Link to="/contact" className="rounded-full bg-[#183A2B] px-4 py-2.5 text-xs font-bold text-white hover:-translate-y-0.5 hover:bg-[#2D6A4F] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#183A2B]" data-testid="header-quote-button">Request a Quote</Link>
           </div>
           <button type="button" className="flex size-11 items-center justify-center border border-[#E0D7C6] xl:hidden" onClick={() => setMenuOpen((open) => !open)} aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} data-testid="mobile-menu-toggle">
             {menuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -38,7 +38,7 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
         </div>
         {menuOpen && <nav className="border-t border-[#E0D7C6] bg-[#FBF9F5] px-5 py-4 xl:hidden" aria-label="Mobile navigation" data-testid="mobile-navigation">
           {navItems.map(([label, path]) => <NavLink key={path} to={path} onClick={() => setMenuOpen(false)} className={({ isActive }) => `block border-b border-[#E0D7C6]/70 py-3 text-sm font-semibold ${isActive ? "text-[#2D6A4F]" : "text-[#1C1917]"}`} data-testid={`mobile-nav-link-${label.toLowerCase().replaceAll(" ", "-")}`}>{label}</NavLink>)}
-          <Link to="/contact" onClick={() => setMenuOpen(false)} className="mt-4 block rounded-full bg-[#183A2B] px-4 py-3 text-center text-sm font-bold text-white" data-testid="mobile-quote-button">Request a Bulk Quote</Link>
+          <Link to="/contact" onClick={() => setMenuOpen(false)} className="mt-4 block rounded-full bg-[#183A2B] px-4 py-3 text-center text-sm font-bold text-white" data-testid="mobile-quote-button">Request a Quote</Link>
         </nav>}
       </header>
       <main>{children}</main>

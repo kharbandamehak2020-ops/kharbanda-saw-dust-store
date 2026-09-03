@@ -17,6 +17,9 @@ Modern, mobile-first industrial website for Kharbanda Saw Dust Store, a family-o
 - Internal navigation uses React Router in one site shell; no internal link opens a new tab.
 - Product and application cards link internally to related product or contact paths.
 - Contact enquiry form collects name, company, phone/WhatsApp, location, required quantity, intended application and message, then opens WhatsApp with a pre-filled message. No email/backend submission is claimed.
+- Delhi map navigation targets Pronod Tech, Sawan Park, while the crawlable office address remains K-11, Sawan Park, Ashok Vihar - Phase 3, Delhi - 110052, Near Picnic Hut.
+- Homepage hero omits the quote and WhatsApp buttons and displays the supplied branded visual without a caption overlay.
+- Saw dust and wood powder use separate, matching material photographs across Home and Products.
 - Persistent floating WhatsApp CTA uses +91 9999994828.
 - Home, About Us, Our Legacy, Products, Applications, Blog and Contact routes are implemented.
 - `sitemap.xml` and `robots.txt` are public frontend assets. Dynamic page metadata, canonical URLs and JSON-LD are managed by the `Seo` component.

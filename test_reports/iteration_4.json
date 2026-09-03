@@ -1,0 +1,58 @@
+{
+  "passed": 7,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Homepage hero cleanup",
+      "name": "homepage-hero-cleanup",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Hero section contains no Request a Quote/Bulk Quote text, no WhatsApp Us text, no caption/figcaption overlay on the branded image panel, and the brand image rendered with a valid non-zero height."
+    },
+    {
+      "criterion": "Distinct product imagery",
+      "name": "distinct-product-imagery",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "On Home and Products pages, product-image-saw-dust and product-image-wood-powder resolved to different image src URLs (images.sawdust vs images.powder from siteData.ts)."
+    },
+    {
+      "criterion": "About image cleanup",
+      "name": "about-image-no-caption-box",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "about-factory-image rendered with a non-empty CSS backgroundImage (role=img visual), and no figcaption/caption elements were found in the About story section."
+    },
+    {
+      "criterion": "Remove bulk wording",
+      "name": "no-bulk-wording-site-wide",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Checked visible body innerText, page title, and meta description across /, /about-us, /products, /applications, /our-legacy, /blog, /contact — no case-insensitive whole-word match for 'bulk' on any route."
+    },
+    {
+      "criterion": "Delhi map target",
+      "name": "delhi-map-target",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "delhi-map-address text equalled 'K-11, Sawan Park, Ashok Vihar - Phase 3, Delhi - 110052, Near Picnic Hut, India' (route text) while delhi-map-iframe src and delhi-map-directions href both encode 'Pronod Tech, Sawan Park, Delhi'."
+    },
+    {
+      "criterion": "Enquiry flow remains working",
+      "name": "contact-enquiry-whatsapp-flow",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Filled all 7 enquiry fields (name, company, phone, location, quantity, application, message) with tscheck- prefixed test data, submitted, and the resulting popup URL (api.whatsapp.com redirect from wa.me) contained phone=919999994828 with the pre-filled message; enquiry-success-message became visible. Initial run failed only due to my own overly-strict wa.me-literal regex not accounting for the wa.me->api.whatsapp.com redirect; fixed the check and reran (flaky-in-authoring, not an app bug)."
+    },
+    {
+      "criterion": "Responsive navigation remains working",
+      "name": "responsive-navigation-whatsapp",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Desktop (1280x800): desktop-navigation visible, nav-link-products and nav-link-contact navigated within the SPA to /products and /contact (same tab), floating-whatsapp-button visible. Mobile (390x844): mobile-menu-toggle opened mobile-navigation, mobile-nav-link-applications navigated to /applications, floating-whatsapp-button remained visible."
+    }
+  ]
+}
