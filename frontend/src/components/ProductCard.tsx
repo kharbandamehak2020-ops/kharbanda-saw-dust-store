@@ -6,7 +6,7 @@ type Product = (typeof products)[number];
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <article id={product.id} className="group overflow-hidden border border-[#E0D7C6] bg-white" data-testid={`product-card-${product.id}`}>
+    <article id={product.id} className="depth-surface group overflow-hidden border border-[#E0D7C6] bg-white" data-testid={`product-card-${product.id}`}>
       <div className="relative aspect-[1.3/1] overflow-hidden bg-[#F4EFE6]">
         <img src={product.image} alt={product.alt} loading="lazy" className="size-full object-cover transition duration-700 group-hover:scale-105" data-testid={`product-image-${product.id}`} />
         <span className="absolute left-4 top-4 bg-[#FBF9F5]/90 px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[#183A2B]" data-testid={`product-eyebrow-${product.id}`}>{product.eyebrow}</span>

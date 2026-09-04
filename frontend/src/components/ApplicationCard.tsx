@@ -1,12 +1,10 @@
-import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import type { applications } from "@/lib/siteData";
 
 type Application = (typeof applications)[number];
 
 export default function ApplicationCard({ application }: { application: Application }) {
   return (
-    <article className="group flex min-h-[21rem] flex-col overflow-hidden border border-[#E0D7C6] bg-white" data-testid={`application-card-${application.id}`}>
+    <article className="depth-surface group flex min-h-[18rem] flex-col overflow-hidden border border-[#E0D7C6] bg-white" data-testid={`application-card-${application.id}`}>
       <div className="relative h-40 overflow-hidden bg-[#F4EFE6]">
         <img src={application.image} alt={`${application.name} industrial application`} loading="lazy" className="size-full object-cover transition duration-700 group-hover:scale-105" data-testid={`application-image-${application.id}`} />
         <div className="absolute inset-0 bg-gradient-to-t from-[#183A2B]/65 to-transparent" />
@@ -14,7 +12,6 @@ export default function ApplicationCard({ application }: { application: Applicat
       </div>
       <div className="flex flex-1 flex-col p-5">
         <p className="text-sm leading-6 text-[#57534E]" data-testid={`application-description-${application.id}`}>{application.description}</p>
-        <Link to={`/products#${application.product}`} className="mt-auto flex items-center gap-2 pt-5 text-xs font-bold uppercase tracking-[0.14em] text-[#2D6A4F] hover:text-[#183A2B]" data-testid={`application-product-link-${application.id}`}>View related product <ArrowUpRight className="size-4" aria-hidden="true" /></Link>
       </div>
     </article>
   );

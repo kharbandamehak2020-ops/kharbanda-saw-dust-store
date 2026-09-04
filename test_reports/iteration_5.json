@@ -1,0 +1,65 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Exact Google map listings and preserved descriptions",
+      "name": "map-listings-exact-target",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Delhi iframe src and directions href both encode 'Kharbanda Saw Dust Store, Sawan Park, Ashok Vihar, Delhi'; Yamuna Nagar iframe src and directions href both encode 'Satnam Industries, Industrial Area, Yamuna Nagar, Haryana'; visible body text still contains 'K-11, Sawan Park, Ashok Vihar - Phase 3, Delhi - 110052, Near Picnic Hut, India' and 'Plot No. 42, Industrial Estate Phase-II, Yamuna Nagar - 135001, Haryana, India'."
+    },
+    {
+      "criterion": "Vibrant clickable maps",
+      "name": "map-vibrant-clickable-links",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Both map iframes on /contact have computed CSS filter not containing 'grayscale' (rendered in normal color), and 2 'Open pinned location' links are visible with hrefs pointing to google.com/maps."
+    },
+    {
+      "criterion": "Interactive 3D homepage brand visual",
+      "name": "interactive-3d-brand-emblem",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "interactive-brand-emblem and interactive-brand-nameplate ('KHARBANDA / SAW DUST STORE...') are visible on homepage; computed transform on interactive-brand-emblem-card changed from matrix(1,0,0,1,0,0) at rest to distinct matrix3d values for pointer positions at (15%,15%) vs (85%,85%) of the card bounds, confirming pointer-responsive tilt. Initial run failed only on my own test's case-sensitive string match (nameplate text is uppercase 'KHARBANDA' vs expected 'Kharbanda'); fixed assertion and reran - flaky-in-authoring, not an app bug."
+    },
+    {
+      "criterion": "New readable typography",
+      "name": "typography-manrope-saira",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "hero-heading computed fontFamily is '\"Saira Variable\", sans-serif' at 72px; hero-description computed fontFamily is '\"Manrope Variable\", sans-serif'; 'Our inspiration' label visible on /our-legacy at 19.2px."
+    },
+    {
+      "criterion": "Dimensional visual polish",
+      "name": "dimensional-card-polish",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "product-card-saw-dust has a non-'none' box-shadow at rest (rgba(36,25,16,0.07) 0px 10px 24px...); on hover the shadow intensified (0px 22px 44px...) and a matrix3d transform (tilt/lift) was applied. Card remained visible after resizing viewport to 390x844 mobile."
+    },
+    {
+      "criterion": "Applications content cleanup",
+      "name": "applications-no-view-related-link",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "On /applications, body text contains no case-insensitive 'view related product' string, and 0 elements matched [data-testid*=\"application-product-link\"] across all 9 application cards."
+    },
+    {
+      "criterion": "Legacy content cleanup",
+      "name": "legacy-no-keeping-story-personal",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "On /our-legacy, body text contains neither 'we are keeping the story personal' nor 'keeping the story personal' (case-insensitive)."
+    },
+    {
+      "criterion": "Core flows remain working",
+      "name": "contact-enquiry-whatsapp-flow + responsive-navigation-whatsapp",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Re-ran two persisted checks from prior iteration by name only: (1) all 7 enquiry fields filled and submitted opens a WhatsApp popup with phone=919999994828 and pre-filled message; (2) desktop nav links navigate within the SPA and floating-whatsapp-button stays visible on desktop (1280x800) and mobile (390x844) with mobile menu toggle working."
+    }
+  ]
+}
