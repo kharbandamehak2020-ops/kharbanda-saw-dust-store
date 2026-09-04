@@ -60,12 +60,12 @@ export default function Home() {
       </section>
 
       <section className="section-shell border-y border-[#E0D7C6] bg-white" data-testid="home-products-section">
-        <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><SectionHeading eyebrow="What we supply" title="Wood materials for serious buyers." body="Available across different wood species and qualities, subject to requirement. Specifications can be discussed according to application and buyer needs." /><Link to="/products" className="inline-flex shrink-0 items-center gap-2 text-sm font-bold text-[#183A2B] underline decoration-[#C68B59] decoration-2 underline-offset-4" data-testid="home-products-link">View all products <ArrowRight className="size-4" aria-hidden="true" /></Link></div>
+        <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><SectionHeading title="Wood materials for serious buyers." body="Available across different wood species and qualities, subject to requirement. Specifications can be discussed according to application and buyer needs." /><Link to="/products" className="inline-flex shrink-0 items-center gap-2 text-sm font-bold text-[#183A2B] underline decoration-[#C68B59] decoration-2 underline-offset-4" data-testid="home-products-link">View all products <ArrowRight className="size-4" aria-hidden="true" /></Link></div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">{products.map((product) => <ProductCard key={product.id} product={product} />)}</div>
       </section>
 
       <section className="section-shell" data-testid="home-applications-section">
-        <SectionHeading eyebrow="Where it finds purpose" title="Material conversations across industries." body="Tell us about your process and we can discuss the relevant product, wood species and quality. Suitability depends on material specifications and application requirements." />
+        <SectionHeading title="Material conversations across industries." body="Tell us about your process and we can discuss the relevant product, wood species and quality. Suitability depends on material specifications and application requirements." />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{applications.slice(0, 6).map((application) => <ApplicationCard key={application.id} application={application} />)}</div>
         <Link to="/applications" className="mt-9 inline-flex items-center gap-2 text-sm font-bold text-[#183A2B] underline decoration-[#C68B59] decoration-2 underline-offset-4" data-testid="home-applications-link">Explore industries we serve <ArrowRight className="size-4" aria-hidden="true" /></Link>
       </section>

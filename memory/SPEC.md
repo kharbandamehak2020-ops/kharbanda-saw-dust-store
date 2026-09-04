@@ -21,12 +21,15 @@ Modern, mobile-first industrial website for Kharbanda Saw Dust Store, a family-o
 - Yamuna Nagar map navigation targets the Google listing for Satnam Industries, Industrial Area, Yamuna Nagar, while the crawlable factory address remains Plot No. 42, Industrial Estate Phase-II, Yamuna Nagar - 135001, Haryana.
 - Homepage hero omits the quote and WhatsApp buttons and presents an interactive 3D wood K emblem with tree, timber rings and sawdust particles.
 - Saw dust and wood powder use separate, matching material photographs across Home and Products.
+- Products are presented one per row with alternating image/text placement; wooden flakes use a representative wood-chip image and electroplating uses a dedicated industrial-process image.
+- Route changes immediately scroll the viewport to the top.
 - Persistent floating WhatsApp CTA uses +91 9999994828.
 - Home, About Us, Our Legacy, Products, Applications, Blog and Contact routes are implemented.
 - `sitemap.xml` and `robots.txt` are public frontend assets. Dynamic page metadata, canonical URLs and JSON-LD are managed by the `Seo` component.
 
 ## Design
 Light warm-beige canvas, deep forest green, dark wood brown and warm amber with dimensional card shadows and restrained 3D motion. Saira is the industrial display face and Manrope is the readable body face. The generated 3D K emblem is prominent on the homepage; the requested special-packaging photo appears in the gallery. The legacy page intentionally has no portrait or image placeholders.
+- Page hero headings use a reduced display scale. About values are shown as a vertical numbered list, and the footer brand column contains only the logo mark.
 
 ## Auth and roles
 No authentication or gated areas.

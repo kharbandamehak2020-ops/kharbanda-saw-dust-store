@@ -1,0 +1,65 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "bugs": [],
+  "action_items": [],
+  "retest_needed": false,
+  "checks": [
+    {
+      "criterion": "Products shown one by one",
+      "name": "products-one-by-one-layout",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "On /products, each of the four product cards (product-card-saw-dust/wood-powder/wood-shavings/wooden-flakes) is a full-width row (>800px wide at 1280 viewport) stacked vertically in order with no y-overlap. Image/text sides alternate: saw-dust image left of its text (index 0, not reversed) while wood-powder image is right of its text (index 1, reversed). All four cards remain visible and non-collided at 390x844 mobile viewport."
+    },
+    {
+      "criterion": "Representative product images",
+      "name": "product-images-representative",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "product-image-saw-dust src contains 1786038607143, product-image-wood-powder contains 1706719681305 (distinct from saw-dust src), product-image-wood-shavings contains 1635513236798 (dedicated shavings photo), product-image-wooden-flakes contains 1589562760889 - all match the expected representative image markers."
+    },
+    {
+      "criterion": "Electroplating image update",
+      "name": "electroplating-image-update",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "On /applications, application-card-electroplating's img src contains 1611023624193 (the dedicated industrial-process image) and does not contain 1598299803204 (the old generic machinery image marker)."
+    },
+    {
+      "criterion": "Footer brand cleanup",
+      "name": "footer-brand-cleanup",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "site-footer text (lowercased) contains none of 'where wood finds purpose', 'family-owned', 'serving india', '1974', 'two generations', 'commitment'; brand-logo (Kharbanda logo) remains visible in the footer brand column."
+    },
+    {
+      "criterion": "Heading and label cleanup",
+      "name": "heading-label-cleanup",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "/about-us body text does not match /About Kharbanda/i; about-heading computed font-size is 60px (<=80px threshold) at 1280 viewport, confirming reduced hero scale. Homepage body text contains neither 'What we supply' nor 'Where it finds purpose' eyebrow strings above the product/application sections."
+    },
+    {
+      "criterion": "Instant route scroll-to-top",
+      "name": "route-scroll-to-top",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "After scrolling homepage to home-cta-section (scrollY > 100px) and clicking nav-link-about-us, the /about-us destination renders about-hero with window.scrollY <= 5, confirming an instant top reset via the existing pathname-based window.scrollTo(0,0) effect in SiteLayout."
+    },
+    {
+      "criterion": "Vertical About quality pointers",
+      "name": "about-quality-vertical-list",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "On /about-us, about-value-0..3 all share the same x coordinate (single column, Set size = 1) and are stacked with strictly increasing, non-overlapping y positions, confirming a single vertical numbered list rather than a multi-column grid."
+    },
+    {
+      "criterion": "Core flows remain working",
+      "name": "core-flows-working",
+      "lane": "browser",
+      "status": "passed",
+      "evidence": "Desktop nav (nav-link-products) navigates to /products; product-quote-link-saw-dust routes to /contact?product=saw-dust; floating-whatsapp-button visible on desktop. All 7 enquiry fields (name, company, phone, location, quantity, application, message) filled and enquiry-submit-button click opened a WhatsApp popup with URL containing 919999994828, plus enquiry-success-message shown. On mobile (390x844), mobile-menu-toggle opens mobile-navigation, mobile-nav-link-contact routes to /contact (contact-hero visible), and floating-whatsapp-button remains visible."
+    }
+  ]
+}

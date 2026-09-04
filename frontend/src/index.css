@@ -145,7 +145,8 @@
 .section-eyebrow { color: #2d6a4f; font-size: .72rem; font-weight: 800; letter-spacing: .16em; line-height: 1.4; text-transform: uppercase; }
 .font-heading { letter-spacing: -.018em; word-spacing: .045em; }
 .page-hero .section-eyebrow { color: #ffffff; font-family: var(--font-heading); font-size: clamp(1rem, 1.5vw, 1.35rem); font-weight: 750; letter-spacing: .12em; }
-.page-hero h1 { font-size: clamp(3.5rem, 7.2vw, 6.8rem); line-height: .95; letter-spacing: -.025em; max-width: 70rem; }
+.page-hero h1 { font-size: clamp(2.75rem, 5.2vw, 5rem); line-height: .98; letter-spacing: -.02em; max-width: 70rem; }
+[data-testid="hero-heading"] { font-size: clamp(3rem, 5.4vw, 4.85rem); }
 [data-testid="home-legacy-section"] .section-eyebrow { font-family: var(--font-heading); font-size: clamp(1rem, 1.4vw, 1.3rem); letter-spacing: .12em; }
 .nav-link { color: #57534e; font-size: .75rem; font-weight: 700; letter-spacing: .04em; padding: .5rem 0; position: relative; }
 .nav-link::after { background: #c68b59; bottom: 0; content: ""; height: 2px; left: 0; position: absolute; transform: scaleX(0); transform-origin: left; transition: transform 180ms ease; width: 100%; }
